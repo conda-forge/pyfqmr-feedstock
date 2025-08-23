@@ -1,5 +1,5 @@
 {% set name = "pyfqmr" %}
-{% set version = "0.3.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/Kramer84/pyfqmr-Fast-Quadric-Mesh-Reduction/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 089e905c88fb21d8e35d67205713fc45a342b14c3f18880049073368d2eda802
+  sha256: 5f895ad43b6381b6b5b8780666662d02e889c2624ecfd034e2e518c779c64026
 
 build:
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-build-isolation --no-index -vv
-  number: 3
+  number: 0
 
 requirements:
   build:
